@@ -4,7 +4,7 @@ function selectOption(option) {
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
             displayCatHeart(); // Display the cat-heart.gif
-            displayBBG(); // Attach the bbg image
+            displayBbg(); // Attach the bbg image
         });
     } else if (option === 'no') {
         document.getElementById('no-button').innerText = 'You sure?'; 
@@ -55,11 +55,11 @@ function displayCatHeart() {
     };
 }
 
-function displayBBG() {
+function displayBbg() {
     var imageContainer = document.getElementById('image-container');
     var bbgImage = new Image();
-    bbgImage.src = 'bbg.png'; // Assuming the bbg image is named "bbg.png"
-    bbgImage.alt = 'BBG';
+    bbgImage.src = 'bbg.jpg'; // Assuming the bbg image is named "bbg.png"
+    bbgImage.alt = 'bbg';
     bbgImage.onload = function() {
         imageContainer.appendChild(bbgImage);
     };
